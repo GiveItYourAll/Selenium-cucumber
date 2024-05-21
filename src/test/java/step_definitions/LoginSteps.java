@@ -35,7 +35,7 @@ public class LoginSteps {
 
     @Then("user is redirected to the homepage")
     public void user_is_redirected_to_the_homepage() {
-
+    // once you move the welcomeElement locator to the LoginPage use loginPage object to call the welcomeElement
         String actualWelcomeMessage = homePage.welcomeElement.getText();
         String expectedWelcomeMessage = "Welcome Yoll";
         Assert.assertEquals("User redirect failed!", expectedWelcomeMessage, actualWelcomeMessage);
