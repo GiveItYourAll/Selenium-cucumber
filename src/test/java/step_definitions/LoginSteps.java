@@ -76,6 +76,8 @@ Assert.assertEquals("Error message verification failed", expectedErrorMessage, a
     }
     @When("user enters username {string} and password {string}")
     public void user_enters_username_and_password(String username, String password) {
+        // use the username and password parameters to pass to sendKeys methods.
+        // right now you hard coded it and that's why many test cases are failing 
         loginPage.usernameInputBox.sendKeys("invalid");
         loginPage.passwordInputBox.sendKeys("invalid");
     }
