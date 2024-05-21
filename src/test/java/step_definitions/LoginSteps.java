@@ -12,7 +12,6 @@ import utilities.DriverFactory;
 public class LoginSteps {
     private WebDriver driver = DriverFactory.getDriver(("chrome"));
     private LoginPage loginPage = new LoginPage(driver);
-    private HomePage homePage = new HomePage(driver);
 
     @Given("user navigates to orangeHrm login page")
     public void user_navigates_to_orange_hrm_login_page() {
@@ -35,8 +34,8 @@ public class LoginSteps {
 
     @Then("user is redirected to the homepage")
     public void user_is_redirected_to_the_homepage() {
-    // once you move the welcomeElement locator to the LoginPage use loginPage object to call the welcomeElement
-        String actualWelcomeMessage = homePage.welcomeElement.getText();
+
+        String actualWelcomeMessage = loginPage.welcomeElement.getText();
         String expectedWelcomeMessage = "Welcome Yoll";
         Assert.assertEquals("User redirect failed!", expectedWelcomeMessage, actualWelcomeMessage);
     }
@@ -76,10 +75,8 @@ Assert.assertEquals("Error message verification failed", expectedErrorMessage, a
     }
     @When("user enters username {string} and password {string}")
     public void user_enters_username_and_password(String username, String password) {
-        // use the username and password parameters to pass to sendKeys methods.
-        // right now you hard coded it and that's why many test cases are failing 
-        loginPage.usernameInputBox.sendKeys("invalid");
-        loginPage.passwordInputBox.sendKeys("invalid");
+        loginPage.usernameInputBox.sendKeys(username);
+        loginPage.passwordInputBox.sendKeys(password);
     }
 
 }

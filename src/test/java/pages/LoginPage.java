@@ -18,8 +18,8 @@ public LoginPage(WebDriver driver) {
         public    WebElement loginButton;
 @FindBy(id="spanMessage")
     public WebElement errorMessage;
-
-
+    @FindBy(id = "welcome")
+    public WebElement welcomeElement;
 }
 
 
