@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
 dryRun=false,
-        tags = "@regression"
+        tags = "@TabsHomework",
+        plugin = {"html:target/reports/cucumber-reports.html"}
 )
 public class TestRunner {
 }

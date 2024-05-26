@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import pages.HomePage;
+
 import pages.LoginPage;
 import utilities.DriverFactory;
 
@@ -46,38 +46,19 @@ public class LoginSteps {
     }
 
 
-
-    @Then("user can see an error message")
-    public void user_can_see_an_error_message() {
-        String expectedErrorMessage ="Invalid credentials";
-        String actualErrorMessage = loginPage.errorMessage.getText();
-        Assert.assertEquals("Error message verification failed", expectedErrorMessage, actualErrorMessage);
-
-
-    }
-
-
-
-
-    @Then("user can see an error message that says Username cannot be empty")
-    public void user_can_see_an_error_message_that_says_username_cannot_be_empty() {
-String expectedErrorMessage = "Username cannot be empty";
-String actualErrorMessage = loginPage.errorMessage.getText();
-Assert.assertEquals("Error message verification failed", expectedErrorMessage, actualErrorMessage);
-    }
-
-
-    @Then("user can see an error message that says Password cannot be empty")
-    public void user_can_see_an_error_message_that_says_password_cannot_be_empty() {
-        String expectedErrorMessage = "Password cannot be empty";
-        String actualErrorMessage = loginPage.errorMessage.getText();
-        Assert.assertEquals("Error message verification failed", expectedErrorMessage, actualErrorMessage);
-    }
-    @When("user enters username {string} and password {string}")
+    @When("user logs in with username {string} and password {string}")
     public void user_enters_username_and_password(String username, String password) {
         loginPage.usernameInputBox.sendKeys(username);
         loginPage.passwordInputBox.sendKeys(password);
     }
+
+    @Then("user can see an error message {string}")
+    public void user_can_see_an_error_message(String expectedErrorMessage) {
+
+        String actualErrorMessage = loginPage.errorMessage.getText();
+        Assert.assertEquals("Error message verification failed", expectedErrorMessage, actualErrorMessage);
+    }
+
 
 }
 
