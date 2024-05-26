@@ -49,16 +49,21 @@ public class OrangeHrmTabsHomework {
 
 //String actualTabList=null;
 //String expectedTabList=null;
-        for(int i = 0; i < expectedTabs.size(); i++) {
-          String  actualTabList = actualTabs.get(i).getText();
-           String  expectedTabList = expectedTabs.get(i);
+        for (int i = 0; i < expectedTabs.size(); i++) {
+            String actualTabList = actualTabs.get(i).getText();
+            String expectedTabList = expectedTabs.get(i);
 
-        System.out.println(actualTabList);
-       System.out.println(expectedTabList);
+            System.out.println(actualTabList);
+            System.out.println(expectedTabList);
 
 
             Assert.assertEquals("Tab list verification failed!", expectedTabList, actualTabList);
         }
+    }
+        @Then("quit the driver1")
+        public void quit_the_driver1() {
+            driver.quit();
+
         }
     }
 
