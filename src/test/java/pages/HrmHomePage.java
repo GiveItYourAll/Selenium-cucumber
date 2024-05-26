@@ -14,7 +14,7 @@ public class HrmHomePage {
     @FindBy(id="welcome")
     public WebElement welcomeMessage;
 
-    @FindBy(css=".menu")
+    @FindBy(css="div.menu>ul>li>a")
    public List<WebElement>tabs;
 
 }

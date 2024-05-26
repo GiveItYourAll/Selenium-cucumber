@@ -44,26 +44,21 @@ public class OrangeHrmTabsHomework {
     public void user_can_see_following_tabs(List<String> expectedTabs) {
         List<WebElement> actualTabs = hrmHomePage.tabs;
 
-        for(WebElement actualTabList: actualTabs ) {
-            System.out.println(actualTabList.getText());
 
-        }
-        for(String expectedTabList:expectedTabs){
-            System.out.println(expectedTabList);
-        }
+        Assert.assertEquals("Tab sizes verification failed!", expectedTabs.size(), actualTabs.size());
 
 //String actualTabList=null;
 //String expectedTabList=null;
-//        for(int i = 0; i <= expectedTabs.size(); i++) {
-//            actualTabList = actualTabs.get(i).getText();
-//            expectedTabList = expectedTabs.get(i);
-//        }
-//        System.out.println(actualTabList);
-//        System.out.println(expectedTabList);
+        for(int i = 0; i < expectedTabs.size(); i++) {
+          String  actualTabList = actualTabs.get(i).getText();
+           String  expectedTabList = expectedTabs.get(i);
+
+        System.out.println(actualTabList);
+       System.out.println(expectedTabList);
 
 
-        Assert.assertEquals("Tab names verification failed!", expectedTabList, actualTabList);
-
+            Assert.assertEquals("Tab list verification failed!", expectedTabList, actualTabList);
+        }
         }
     }
 
