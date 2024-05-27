@@ -8,13 +8,14 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 public class Hooks {
 
     @Before
     public void setUp() {
 //Apply implicit wait
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Driver.getDriver().manage().window().maximize();
     }
 

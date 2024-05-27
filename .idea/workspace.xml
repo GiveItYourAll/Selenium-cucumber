@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="118d4506-1bfc-4c7a-990c-15218ad581a6" name="Changes" comment="cucumber">
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Playground.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HrmAddEmployeePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HrmPimPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step_definitions/HomeworkHrmUserStory3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/configs.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/homework-hrmUserStory-3.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BestBuySearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BestBuySearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HrmHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HrmHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HrmLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HrmLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/BestBuySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/BestBuySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/OrangeHrmTabsHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/OrangeHrmTabsHomework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/orangehrm-tabs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/orangehrm-tabs.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/user-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/user-login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definitions/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Playground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +72,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Playground.executor": "Run",
     "Application.TestDataStructure.executor": "Run",
+    "Cucumber Java.Feature: homework-hrmUserStory-3.executor": "Run",
     "Cucumber Java.Feature: user-login.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
     "Cucumber Java.Scenario: Provide different data.executor": "Run",
     "Cucumber Java.Scenario: User can login with valid credentials.executor": "Run",
     "Cucumber Java.Scenario: User cannot login with empty username.executor": "Debug",
+    "Cucumber Java.Scenario: user should be able to see login details when checkbox is selected.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -85,27 +90,15 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="TestDataStructure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="step_definitions.TestDataStructure" />
-      <module name="selenium-cucumber-demo-framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="step_definitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: user-login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: user should be able to see login details when checkbox is selected">
+    <configuration name="Feature: homework-hrmUserStory-3" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user-login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homework-hrmUserStory-3.feature" />
+      <option name="GLUE" value="step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="selenium-cucumber-demo-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: user-login" />
+      <option name="SUGGESTED_NAME" value="Feature: homework-hrmUserStory-3" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -117,15 +110,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Provide different data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User can login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user-login.feature" />
       <option name="GLUE" value="step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="selenium-cucumber-demo-framework" />
-      <option name="NAME_FILTER" value="^Provide different data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Provide different data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Provide different data" />
+      <option name="NAME_FILTER" value="^User can login with valid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can login with valid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User can login with valid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -137,15 +130,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User cannot login with empty username" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: user should be able to see login details when checkbox is selected" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/user-login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homework-hrmUserStory-3.feature" />
       <option name="GLUE" value="step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="selenium-cucumber-demo-framework" />
-      <option name="NAME_FILTER" value="^User cannot login with empty username$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User cannot login with empty username$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User cannot login with empty username" />
+      <option name="NAME_FILTER" value="^user should be able to see login details when checkbox is selected$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user should be able to see login details when checkbox is selected$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user should be able to see login details when checkbox is selected" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homework-hrmUserStory-3.feature" />
+      <option name="GLUE" value="step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="selenium-cucumber-demo-framework" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -174,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: user should be able to see login details when checkbox is selected" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Application.TestDataStructure" />
-        <item itemvalue="Cucumber Java.Scenario: Provide different data" />
-        <item itemvalue="Cucumber Java.Feature: user-login" />
-        <item itemvalue="Cucumber Java.Scenario: User cannot login with empty username" />
+        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Scenario: User can login with valid credentials" />
+        <item itemvalue="Cucumber Java.Feature: homework-hrmUserStory-3" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716750126969</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cucumber">
+      <option name="closed" value="true" />
+      <created>1716838740196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716838740196</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

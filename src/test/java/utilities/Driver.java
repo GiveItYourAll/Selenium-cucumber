@@ -11,7 +11,7 @@ private Driver(){}
 
     public static WebDriver getDriver(){
     if(driver==null){
-        driver = DriverFactory.getDriver("chrome");
+        driver = DriverFactory.getDriver(ConfigReader.getProperty("browserType"));
 
     }
 return driver;

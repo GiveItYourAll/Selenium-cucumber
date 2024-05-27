@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.HrmHomePage;
 import pages.HrmLoginPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 
@@ -20,7 +21,7 @@ public class OrangeHrmTabsHomework {
 
     @Given("user navigates to hrm login page")
     public void user_navigates_to_hrm_login_page() {
-        Driver.getDriver().get("http://dev-hrm.yoll.io");
+        Driver.getDriver().get(ConfigReader.getProperty("hrm_url"));
     }
 
     @When("user logs in with username1 {string} and password1 {string}")

@@ -17,5 +17,6 @@ public class HrmHomePage {
 
     @FindBy(css="div.menu>ul>li>a")
    public List<WebElement>tabs;
-
+@FindBy(id="menu_pim_viewPimModule")
+    public WebElement pimButton;
 }

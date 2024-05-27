@@ -7,14 +7,17 @@ import org.junit.Assert;
 
 
 import pages.LoginPage;
+import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.util.Arrays;
 
 public class LoginSteps {
    // private WebDriver driver = DriverFactory.getDriver(("chrome"));
     private LoginPage loginPage = new LoginPage();
     @Given("user navigates to orangeHrm login page")
     public void user_navigates_to_orange_hrm_login_page()  {
-        Driver.getDriver().get("http://dev-hrm.yoll.io/");
+        Driver.getDriver().get(ConfigReader.getProperty("hrm_url"));
     }
 
     @When("user logs in with valid username and password")
