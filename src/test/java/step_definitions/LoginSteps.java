@@ -4,18 +4,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+
 
 import pages.LoginPage;
-import utilities.DriverFactory;
+import utilities.Driver;
 
 public class LoginSteps {
-    private WebDriver driver = DriverFactory.getDriver(("chrome"));
-    private LoginPage loginPage = new LoginPage(driver);
-
+   // private WebDriver driver = DriverFactory.getDriver(("chrome"));
+    private LoginPage loginPage = new LoginPage();
     @Given("user navigates to orangeHrm login page")
-    public void user_navigates_to_orange_hrm_login_page() {
-        driver.get("http://dev-hrm.yoll.io/");
+    public void user_navigates_to_orange_hrm_login_page()  {
+        Driver.getDriver().get("http://dev-hrm.yoll.io/");
     }
 
     @When("user logs in with valid username and password")
@@ -40,10 +39,6 @@ public class LoginSteps {
         Assert.assertEquals("User redirect failed!", expectedWelcomeMessage, actualWelcomeMessage);
     }
 
-    @Then("quit the driver")
-    public void quit_the_driver() {
-        driver.quit();
-    }
 
 
     @When("user logs in with username {string} and password {string}")

@@ -1,4 +1,5 @@
-@TabsHomework
+
+@TabsHomework @regression
 Feature: Homework Feature
   Scenario: User can see all the tabs on homepage
     Given user navigates to hrm login page
@@ -16,4 +17,3 @@ Feature: Homework Feature
     |Dashboard  |
     |Directory  |
     |Maintenance|
-* quit the driver1

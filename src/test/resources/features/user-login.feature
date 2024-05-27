@@ -1,15 +1,14 @@
-
+@regression
 Feature: Login Functionality
 
   Background: preliminary steps
     Given user navigates to orangeHrm login page
 
-
+@ValidLogin @Smoke
   Scenario: User can login with valid credentials
-    When user enters username "yoll-student" and password "Bootcamp5#"
+    When user logs in with username "yoll-student" and password "Bootcamp5#"
     And user clicks login button
     Then user is redirected to the homepage
-    * quit the driver
 
 #  Scenario: User cannot login with invalid credentials
 #    When user enters username "invalid" and password "invalid"
@@ -35,7 +34,6 @@ Feature: Login Functionality
     When user logs in with username "<username>" and password "<password>"
     And user clicks login button
     Then user can see an error message "<errorMessage>"
-    * quit the driver
     Examples:
     |testCase| username | password |errorMessage       |
     |both invalid| invalid  |invalid   |Invalid credentials|

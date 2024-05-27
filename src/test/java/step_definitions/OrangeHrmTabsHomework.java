@@ -5,22 +5,22 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.HrmHomePage;
 import pages.HrmLoginPage;
-import utilities.DriverFactory;
+import utilities.Driver;
+
 
 import java.util.List;
 
 public class OrangeHrmTabsHomework {
-    private WebDriver driver = DriverFactory.getDriver("Chrome");
-    private HrmLoginPage hrmLoginPage = new HrmLoginPage(driver);
-    private HrmHomePage hrmHomePage = new HrmHomePage(driver);
+
+    private HrmLoginPage hrmLoginPage = new HrmLoginPage();
+    private HrmHomePage hrmHomePage = new HrmHomePage();
 
     @Given("user navigates to hrm login page")
     public void user_navigates_to_hrm_login_page() {
-        driver.get("http://dev-hrm.yoll.io");
+        Driver.getDriver().get("http://dev-hrm.yoll.io");
     }
 
     @When("user logs in with username1 {string} and password1 {string}")
@@ -62,7 +62,7 @@ public class OrangeHrmTabsHomework {
     }
         @Then("quit the driver1")
         public void quit_the_driver1() {
-            driver.quit();
+            Driver.getDriver().quit();
 
         }
     }
