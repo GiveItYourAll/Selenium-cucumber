@@ -15,17 +15,21 @@ public class Hooks {
     @Before
     public void setUp() {
 //Apply implicit wait
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         Driver.getDriver().manage().window().maximize();
     }
 
     @After
     public void tearDown(Scenario scenario) {
+
         if (scenario.isFailed()) {
-            final byte [] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/jpeg", "screenshot");
-            Driver.quitDriver();
         }
-    }}
+        Driver.quitDriver();
+    }
+
+}
+
 
 

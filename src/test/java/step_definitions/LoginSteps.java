@@ -40,6 +40,7 @@ public class LoginSteps {
         String actualWelcomeMessage = loginPage.welcomeElement.getText();
         String expectedWelcomeMessage = "Welcome Yoll";
         Assert.assertEquals("User redirect failed!", expectedWelcomeMessage, actualWelcomeMessage);
+
     }
 
 
@@ -55,6 +56,8 @@ public class LoginSteps {
 
         String actualErrorMessage = loginPage.errorMessage.getText();
         Assert.assertEquals("Error message verification failed", expectedErrorMessage, actualErrorMessage);
+
+
     }
 
 
